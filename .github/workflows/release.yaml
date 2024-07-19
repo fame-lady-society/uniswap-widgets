@@ -19,6 +19,7 @@ jobs:
       - run: yarn prepare
 
       # Defaults to the user or organization that owns the workflow file
+
       # - run: yarn prei18n:compile
       # - uses: crowdin/github-action@1.4.8
       #   with:
