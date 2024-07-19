@@ -1,8 +1,8 @@
 {
-  "name": "@uniswap/widgets",
+  "name": "@fame-lady-society/uniswap-widgets",
   "description": "Uniswap Interface",
-  "homepage": "https://github.com/Uniswap/widgets#readme",
-  "repository": "https://github.com/Uniswap/widgets",
+  "homepage": "https://github.com/fame-lady-society/uniswap-widgets#readme",
+  "repository": "https://github.com/fame-lady-society/uniswap-widgets",
   "files": [
     "dist"
   ],
@@ -214,5 +214,8 @@
   },
   "resolutions": {
     "decode-uri-component": "^0.2.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
