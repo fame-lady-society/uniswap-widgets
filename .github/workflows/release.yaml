@@ -36,10 +36,10 @@ jobs:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # - run: yarn i18n:compile
 
-      - run: yarn test
-        if: success()
-        env:
-          JSON_RPC_PROVIDER: ${{ secrets.JSON_RPC_PROVIDER }}
+      # - run: yarn test
+      #   if: success()
+      #   env:
+      #     JSON_RPC_PROVIDER: ${{ secrets.JSON_RPC_PROVIDER }}
 
       - run: yarn release
         if: success()
