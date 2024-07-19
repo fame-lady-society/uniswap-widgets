@@ -18,6 +18,7 @@ jobs:
       - uses: ./.github/actions/setup
       - run: yarn prepare
 
+      # Defaults to the user or organization that owns the workflow file
       # - run: yarn prei18n:compile
       # - uses: crowdin/github-action@1.4.8
       #   with:
@@ -43,6 +44,5 @@ jobs:
       - run: yarn release
         if: success()
         env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_CONFIG_USERCONFIG: /dev/null
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
