@@ -45,4 +45,3 @@ jobs:
         if: success()
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_CONFIG_USERCONFIG: /dev/null
